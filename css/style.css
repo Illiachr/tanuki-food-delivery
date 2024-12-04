@@ -162,7 +162,9 @@ body {
 
 .products__header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 2.75rem;
 }
 
 .products__title {
@@ -185,15 +187,96 @@ body {
   background-position: 0.625rem center;
 }
 
-/* .products__search::before {
-  content: url('../img/serch-icon.svg');
-} */
-
 .products__search::placeholder {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #bfbfbf;
+}
+
+.products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Product Card Styles */
+.product__card {
+  width: 24rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.card__cover {
+  width: 24rem;
+  height: 15.625rem;
+  background-image: url('../img/pizzaplus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.5rem 2.25rem;
+}
+
+.product__description--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #000000;
+}
+
+.product__title--info {
+  width: 3.5rem;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  padding: 0 0.5rem;
+  background: #262626;
+  border-radius: 0.125rem;
+}
+
+.product__description--text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1.625rem;
+  padding: 0.5rem 0;
+}
+
+.product__info--rating {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #ffc107;
+}
+
+.product__info--text {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #8c8c8c;
 }
 
 .footer {
