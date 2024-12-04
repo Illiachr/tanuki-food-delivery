@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tanuki Food Delivery</title>
+  <title>Food Delivery</title>
   <link rel="stylesheet" href="css/style.css">
   <script type="module" defer src="js/main.js"></script>
 </head>
@@ -11,42 +11,53 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo">
+        <a class="logo" href="#!">
           <img class="logo__img" src="./img/logo-icon.svg" alt="logo button cover" srcset="">
           <span class="logo__title">
             Delivery Food
           </span>
         </a>
         <div class="header__controls">
-          <button class="btn login__btn">
-            <div class="btn__inner">
-              <img src="./img/user-icon.svg" alt="login button cover">
-              <span>Login</span>
-            </div>
+          <button type="button" class="btn btn__primary">
+            <img src="./img/user-icon.svg" alt="login button cover">
+            <span>Login</span>
           </button>
-          <div class="btn cart__btn">
-            <div class="btn__inner">
-              <img src="./img/shopping-cart-icon.svg" alt="cart button cover">
-              <span>Your Cart</span>
-            </div>
-          </div>
+          <button type="button" class="btn btn__outline">
+            <img src="./img/shopping-cart-icon.svg" alt="cart button cover">
+            <span>Your Cart</span>
+          </button>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
-    <div class="container">
-      <div class="main__promo">
-        <img src="img/promo.png" alt="">
-        <h1 class="promo__title"></h1>
-        <p class="promo__subtitle"></p>
+    <section class="section promo">
+      <div class="container">
+        <div class="promo__inner">
+          <div class="promo--text">
+            <h1 class="promo--title">Online food delivery service</h1>
+            <p class="promo--subtitle">Your favorite restaurant's dishes delivered by a masked, gloved courier with sanitizer</p>
+          </div>
+          <div class="promo--cover"></div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="section products">
+      <div class="container">
+        <div class="products__inner">
+          <div class="products__header">
+            <h2 class="products__title">Restaurants</h2>
+            <input type="text" class="products__search" placeholder="Find meals or places">
+          </div>
+          <div class="products__cards"></div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <a class="logo">
+        <a class="logo" href="#!">
           <img class="logo__img" src="./img/logo-icon.svg" alt="logo button cover">
           <span class="logo__title">
             Delivery Food
@@ -54,16 +65,30 @@
         </a>
         <nav class="footer__menu">
           <ul class="menu__list">
-            <li class="menu__item">Ресторанам</li>
-            <li class="menu__item">Курьерам</li>
-            <li class="menu__item">Пресс-центр</li>
-            <li class="menu__item">Контакты</li>
+            <li class="menu__item">
+              <a href="#!" class="menu__item--link">Restaurants</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__item--link">Couriers</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__item--link">Press-center</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__item--link">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="social">
-          <img src="img/insta-icon.svg" alt="">
-          <img src="img/fb-icon.svg" alt="">
-          <img src="img/wk-icon.svg" alt="">
+          <a href="https://www.instagram.com/" class="menu__item--link">
+            <img src="img/insta-icon.svg" alt="follow instagram">
+          </a>
+          <a href="https://www.facebook.com" class="menu__item--link">
+            <img src="img/fb-icon.svg" alt="follow facebook">
+          </a>
+          <a href="https://vk.com" class="menu__item--link">
+            <img src="img/wk-icon.svg" alt="follow vkontakte">
+          </a>
         </div>
       </div>
     </div>
