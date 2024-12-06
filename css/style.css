@@ -366,6 +366,13 @@ body {
   background-color: #8c8c8c;
 }
 
+.preloader {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #40a9ff;
+}
+
 /* Cart Styles */
 .cart__popup {
   visibility: hidden;

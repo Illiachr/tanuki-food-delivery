@@ -22,7 +22,7 @@
             <img src="./img/user-icon.svg" alt="login button cover">
             <span>Login</span>
           </button>
-          <button type="button" class="btn btn__outline">
+          <button id="cartBtn" type="button" class="btn btn__outline">
             <img src="./img/shopping-cart-icon.svg" alt="cart button cover">
             <span>Your Cart</span>
           </button>
@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="products__cards">
+          <div id="card-container" class="products__cards" data-content="meals">
             <div class="product__card goods">
               <div class="card__cover" style="background-image: url('img/goods/image-001.jpg');"></div>
               <div class="card__description">
@@ -149,9 +149,9 @@
       </div>
     </section>
   </main>
-  <div class="cart__popup">
+  <div id="cart" class="cart__popup">
     <div class="cart__popup--overlay">
-      <div class="cart__form">
+      <form id="cartForm" class="cart__form">
         <div class="cart__popup--header">
           <h3 class="cart__title">Cart</h3>
           <button type="button" class="cart__btn--close"></button>
@@ -217,10 +217,10 @@
           <div class="cart__total">45 &#8364;</div>
           <div class="cart__controls">
             <button type="submit" class="btn btn__primary">Order</button>
-            <button type="button" class="btn btn__outline">Cancel</button>
+            <button type="button" name="cancelBtn" class="btn btn__outline">Cancel</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   <footer class="footer">
