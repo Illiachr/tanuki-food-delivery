@@ -16,9 +16,12 @@ const formatMeals = (meals) => meals
 const findProviderData = (data, queryVal) => data.find(
   ({name}) => name.toLowerCase() === formatString(queryVal).toLowerCase());
 
+  const getUrl = (path) => new URL(path, import.meta.url);
+
 export {
   capitalizeWord,
   formatString,
   formatMeals,
-  findProviderData
+  findProviderData,
+  getUrl
 }

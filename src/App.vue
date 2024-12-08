@@ -1,19 +1,17 @@
 <script setup>
-import { ref } from 'vue';
+import { store } from './stores';
 
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Popup from './components/Popup.vue';
-
-const isOpen = ref(false);
 </script>
 
 <template>
-  <Header @togglePopup="isOpen = true"/>
+  <Header @togglePopup="store.setPopupOpen(true)"/>
   <main class="main">
     <router-view></router-view>
   </main>
-  <Popup :open="isOpen" @togglePopup="isOpen = false" />
+  <Popup :open="store.popupOpen" @togglePopup="store.setPopupOpen(false)" />
   <Footer />
 </template>
 
