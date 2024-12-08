@@ -1,5 +1,6 @@
 <script setup>
-  import { TOGGLE_POPUP } from "./helpers/constants.js";
+  import { TOGGLE_POPUP } from "../helpers/constants.js";
+import { getUrl } from "../helpers/helpers.js";
   const emit = defineEmits([TOGGLE_POPUP]);
   const togglePopup = () => {
     emit(TOGGLE_POPUP);
@@ -11,7 +12,7 @@
     <div class="container">
       <div class="header__inner">
         <router-link class="logo" to="/">
-          <img class="logo__img" src="../assets/logo-icon.svg" alt="logo button cover" srcset="">
+          <img class="logo__img" :src="getUrl('../assets/logo-icon.svg')" alt="logo button cover" srcset="">
           <span class="logo__title">
             Delivery Food
           </span>

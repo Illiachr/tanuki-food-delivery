@@ -1,5 +1,5 @@
 <script setup>
-  import { TOGGLE_POPUP } from './helpers/constants.js';
+  import { TOGGLE_POPUP } from '../helpers/constants.js';
   const {open} = defineProps({open: Boolean})
   const emit = defineEmits([TOGGLE_POPUP]);
   const closePopup = () => {
