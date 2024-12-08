@@ -176,7 +176,7 @@ body {
 
 .promo--cover {
   width: 100%;
-  background-image: url('../img/promo-2.png');
+  background-image: url('./assets/promo-2.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
@@ -223,7 +223,7 @@ body {
   padding: 0.5rem 0.625rem;
   padding-left: 2rem;
   min-width: 19.25rem;
-  background-image: url('../img/search-icon.svg');;
+  background-image: url('src/assets/search-icon.svg');;
   background-size: 1.125rem 1.125rem;
   background-repeat: no-repeat;
   background-position: 0.625rem center;
